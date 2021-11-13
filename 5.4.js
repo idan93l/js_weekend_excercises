@@ -1,5 +1,5 @@
 const toWeirdCase = str => {
-  const str = [];
+  const newStr = [];
   const wordStr = str.split(` `);
   for (let i = 0; i < wordStr.length; i++) {
     newWord = wordStr[i].split(``);
@@ -8,9 +8,9 @@ const toWeirdCase = str => {
         newWord[j] = newWord[j].toUpperCase(); 
       }
     }
-    str.push(newWord.join(``));
+    newStr.push(newWord.join(``));
   }
-  return str.join(` `);
+  return newStr.join(` `);
 };
 
 console.log(toWeirdCase(`String`));
