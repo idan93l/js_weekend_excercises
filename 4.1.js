@@ -3,15 +3,15 @@ const fibonacci = num => {
   for(let i = 1; i < num - 1; i++) {
     fiboArr.push(fiboArr[i] + fiboArr[i-1]);
   }
-  return fiboArr;
+  return fiboArr[fiboArr.length -1];
 }
 
 const fibonacci2 = num => {
   let fiboArr = [0,1]
-  for(let i = 1; i < num; i++) {
+  for(let i = 1; i < num - 1; i++) {
     fiboArr.push(fiboArr[i] + fiboArr[i-1]);
   }
-  return fiboArr;
+  return fiboArr[fiboArr.length -1];
 }
 
 console.log(fibonacci(12));
