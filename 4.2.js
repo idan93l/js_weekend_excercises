@@ -1,4 +1,4 @@
-function tribonacci(signature,n) {
+const tribonacci = (signature,n) => {
   const empty = [];
   if(n === 0) {
     return empty;
